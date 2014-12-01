@@ -27,6 +27,7 @@ Virtualenv google1.7
 2)	Move into virtual environment and activate it
 
 Cd google1.7 
+
 Activate
 
 3)	Install Django 
@@ -48,6 +49,7 @@ git clone https://github.com/ivan7707/GeoDjangoTutorial1.7.git
 6)	Move into GeoDjangoTutorial1.7 and run the server
 
 cd GeoDjangoTutorial1.7
+
 python manage.py runserver
 
 
