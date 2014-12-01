@@ -21,16 +21,20 @@ Please feel free to send any updates that you see fit.
 Here are the instructions that worked for me (I reinstalled it to make sure it worked) 
 
 1)	Add virtual environment 
+
 Virtualenv google1.7
 
 2)	Move into virtual environment and activate it
+
 Cd google1.7 
 Activate
 
 3)	Install Django 
+
 Pip Install Django
 
 4)	Add database 
+
 I used pgAdminIII to install the database with postgis extension (or create a database from postgis_21_sample template that you install when installing pgAdminIII)
 
 As per the tutorial, username and password are:
@@ -38,9 +42,11 @@ As per the tutorial, username and password are:
 geouser geodatabase
 
 5)	Clone this into google1.7 folder
+
 git clone https://github.com/ivan7707/GeoDjangoTutorial1.7.git
 
 6)	Move into GeoDjangoTutorial1.7 and run the server
+
 cd GeoDjangoTutorial1.7
 python manage.py runserver
 
