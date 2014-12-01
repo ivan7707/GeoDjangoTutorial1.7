@@ -37,7 +37,7 @@ Pip Install Django
 
 I used pgAdminIII to install the database with postgis extension (or create a database from postgis_21_sample template that you install when installing pgAdminIII)
 
-As per the tutorial, username and password are:
+As per the tutorial, username and password are
 
 geouser geodatabase
 
