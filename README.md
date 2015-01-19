@@ -5,6 +5,10 @@ Python 3.4.2
 Django 1.7
 Postgres 9.3.5
 
+EDIT:  a pull request from tomscytale  made me realize that rather than update from 2.x to 3.x that I should have made the program compatible with both versions.  
+If anyone using 2.x finds issues in using the program, please let me know, and I will update it to work on both versions of Python.
+
+
 In learning Django and GeoDrango, I came across this tutorial.  
 
 http://invisibleroads.com/tutorials/geodjango-googlemaps-build.html
