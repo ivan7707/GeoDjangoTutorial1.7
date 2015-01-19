@@ -86,7 +86,7 @@ def upload(request):
         try:
             zip_longest = itertools.zip_longest  # Python 3
         except AttributeError:
-            zip_longest = itertools.izip_longest  # Python 3
+            zip_longest = itertools.izip_longest  # Python 2
 
         for waypointName, waypointGeometry in zip_longest(waypointNames, waypointGeometries):
             waypoint = Waypoint(name=waypointName, geometry=waypointGeometry.wkt)
