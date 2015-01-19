@@ -5,4 +5,5 @@ lib
 include
 .DS_Store
 .pyc
-.idea/workspace.xml
+.idea/
+__pycache__/

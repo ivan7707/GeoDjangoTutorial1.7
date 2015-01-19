@@ -81,7 +81,14 @@ def upload(request):
         layer = dataSource[0]
         waypointNames = layer.get_fields('name')
         waypointGeometries = layer.get_geoms()
-        for waypointName, waypointGeometry in itertools.zip_longest(waypointNames, waypointGeometries):
+
+        # name change from Python 2 to 3
+        try:
+            zip_longest = itertools.zip_longest  # Python 3
+        except AttributeError:
+            zip_longest = itertools.izip_longest  # Python 2
+
+        for waypointName, waypointGeometry in zip_longest(waypointNames, waypointGeometries):
             waypoint = Waypoint(name=waypointName, geometry=waypointGeometry.wkt)
             waypoint.save()
 

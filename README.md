@@ -46,9 +46,15 @@ geouser geodatabase
 
 git clone https://github.com/ivan7707/GeoDjangoTutorial1.7.git
 
-6)	Move into GeoDjangoTutorial1.7 and run the server
+6)	Move into GeoDjangoTutorial1.7
 
 cd GeoDjangoTutorial1.7
+
+7) Run migrations
+
+python manage.py migrate
+
+8) Run the server
 
 python manage.py runserver
 
